@@ -1,0 +1,56 @@
+import {
+  DiscordMessages,
+  DiscordMessage,
+  DiscordCommand,
+  DiscordEmbed,
+  DiscordEmbedDescription,
+  DiscordEmbedFields,
+  DiscordEmbedField,
+  DiscordAttachments,
+  DiscordActionRow,
+  DiscordButton,
+} from "@skyra/discord-components-react";
+
+# Play
+
+## Description
+
+- Play music
+
+![play search results](/assets/play-search-results.png)
+
+## Usage
+
+<DiscordMessages>
+  <DiscordMessage
+    bot="true"
+    verified="true"
+    roleColor="#FF0000"
+    author="GROOT"
+    avatar="/assets/groot-avatar.webp"
+  >
+    <DiscordCommand slot="reply" author="User" command="/play" />
+    <DiscordEmbed slot="embeds" color="blue" embedTitle="Preparing to Play">
+      <DiscordEmbedDescription slot="description">
+        Marshmello - Stars (Official Music Video)
+      </DiscordEmbedDescription>
+    </DiscordEmbed>
+    <DiscordEmbed
+      slot="embeds"
+      color="black"
+      authorName="Now Playing"
+      authorImage="/assets/groot-avatar.webp"
+      embedTitle="Marshmello - Alone (Official Music Video)"
+      thumbnail="https://cdn.grootbot.pro/image/ALZHF5UqnU4"
+    >
+      <DiscordEmbedFields slot="fields">
+        <DiscordEmbedField fieldTitle="Duration" inline inlineIndex={1}>
+          3:20
+        </DiscordEmbedField>
+        <DiscordEmbedField fieldTitle="Requester" inline inlineIndex={2}>
+          User
+        </DiscordEmbedField>
+      </DiscordEmbedFields>
+    </DiscordEmbed>
+  </DiscordMessage>
+</DiscordMessages>

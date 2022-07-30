@@ -1,0 +1,36 @@
+import {
+  DiscordMessages,
+  DiscordMessage,
+  DiscordCommand,
+  DiscordEmbed,
+  DiscordEmbedDescription,
+  DiscordEmbedFields,
+  DiscordEmbedField,
+  DiscordAttachments,
+  DiscordActionRow,
+  DiscordButton,
+} from "@skyra/discord-components-react";
+
+# Join
+
+## Description
+
+- Make the bot join your voice channel.
+
+## Usage
+
+<DiscordMessages>
+  <DiscordMessage bot="true" verified="true" roleColor="#FF0000" author="GROOT" avatar="/assets/groot-avatar.webp">
+    <DiscordCommand slot="reply" author="User" command="/join" />
+    <DiscordEmbed
+      slot="embeds"
+      color="blue"
+      authorName="GROOT"
+      authorImage="/assets/groot-avatar.webp"
+    >
+      <DiscordEmbedDescription slot="description">
+        I've Successfully Joined YOUR_CHANNEl_NAME
+      </DiscordEmbedDescription>
+    </DiscordEmbed>
+  </DiscordMessage>
+</DiscordMessages>

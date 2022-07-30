@@ -1,0 +1,36 @@
+import {
+  DiscordMessages,
+  DiscordMessage,
+  DiscordCommand,
+  DiscordEmbed,
+  DiscordEmbedDescription,
+  DiscordEmbedFields,
+  DiscordEmbedField,
+  DiscordAttachments,
+  DiscordActionRow,
+  DiscordButton,
+} from "@skyra/discord-components-react";
+
+# Leave
+
+## Description
+
+- Disconnect the bot.
+
+## Usage
+
+<DiscordMessages>
+  <DiscordMessage bot="true" verified="true" roleColor="#FF0000" author="GROOT" avatar="/assets/groot-avatar.webp">
+    <DiscordCommand slot="reply" author="User" command="/leave" />
+    <DiscordEmbed
+      slot="embeds"
+      color="black"
+      authorName="GROOT"
+      authorImage="/assets/groot-avatar.webp"
+    >
+      <DiscordEmbedDescription slot="description">
+        Disconnected Successfully
+      </DiscordEmbedDescription>
+    </DiscordEmbed>
+  </DiscordMessage>
+</DiscordMessages>

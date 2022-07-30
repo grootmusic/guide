@@ -1,0 +1,95 @@
+import {
+  DiscordMessages,
+  DiscordMessage,
+  DiscordCommand,
+  DiscordEmbed,
+  DiscordEmbedDescription,
+  DiscordEmbedFields,
+  DiscordEmbedField,
+  DiscordAttachments,
+  DiscordActionRow,
+  DiscordButton,
+  DiscordBold,
+} from "@skyra/discord-components-react";
+
+# Loop
+
+## Description
+
+- Toggle looping the tracks.
+- There are several options available to control the looping behavior, You can either loop the `current` playing song or loop all the songs in the `queue`.
+  ![loop options](/assets/loop-options.png)
+
+## Usage
+
+### Looping the current playing song
+
+<DiscordMessages>
+  <DiscordMessage
+    bot="true"
+    verified="true"
+    roleColor="#FF0000"
+    author="GROOT"
+    avatar="/assets/groot-avatar.webp"
+  >
+    <DiscordCommand slot="reply" author="User" command="/loop" />
+    <DiscordEmbed
+      slot="embeds"
+      color="blue"
+      authorName="GROOT"
+      authorImage="/assets/groot-avatar.webp"
+    >
+      <DiscordEmbedDescription slot="description">
+        Looping The Current Song <DiscordBold>Enabled</DiscordBold>
+      </DiscordEmbedDescription>
+    </DiscordEmbed>
+  </DiscordMessage>
+</DiscordMessages>
+
+### Looping the whole queue
+
+<DiscordMessages>
+  <DiscordMessage
+    bot="true"
+    verified="true"
+    roleColor="#FF0000"
+    author="GROOT"
+    avatar="/assets/groot-avatar.webp"
+  >
+    <DiscordCommand slot="reply" author="User" command="/loop" />
+    <DiscordEmbed
+      slot="embeds"
+      color="blue"
+      authorName="GROOT"
+      authorImage="/assets/groot-avatar.webp"
+    >
+      <DiscordEmbedDescription slot="description">
+        Now Looping The Whole Queue <DiscordBold>Enabled</DiscordBold>
+      </DiscordEmbedDescription>
+    </DiscordEmbed>
+  </DiscordMessage>
+</DiscordMessages>
+
+### Turning Off Loop
+
+<DiscordMessages>
+  <DiscordMessage
+    bot="true"
+    verified="true"
+    roleColor="#FF0000"
+    author="GROOT"
+    avatar="/assets/groot-avatar.webp"
+  >
+    <DiscordCommand slot="reply" author="User" command="/loop" />
+    <DiscordEmbed
+      slot="embeds"
+      color="blue"
+      authorName="GROOT"
+      authorImage="/assets/groot-avatar.webp"
+    >
+      <DiscordEmbedDescription slot="description">
+        Now Looping Mode Is <DiscordBold>Disabled</DiscordBold>
+      </DiscordEmbedDescription>
+    </DiscordEmbed>
+  </DiscordMessage>
+</DiscordMessages>
