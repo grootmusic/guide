@@ -1,0 +1,78 @@
+import {
+  DiscordMessages,
+  DiscordMessage,
+  DiscordCommand,
+  DiscordEmbed,
+  DiscordEmbedDescription,
+  DiscordEmbedFields,
+  DiscordEmbedField,
+  DiscordAttachments,
+  DiscordActionRow,
+  DiscordButton,
+} from "@skyra/discord-components-react";
+
+# About
+
+## Description
+
+- Shows information about the bot.
+
+## Usage
+
+<DiscordMessages>
+  <DiscordMessage author="GROOT" avatar="/assets/groot-avatar.webp">
+    <DiscordCommand slot="reply" author="User" command="/about" />
+    <DiscordEmbed
+      slot="embeds"
+      color="#0F52BA"
+      authorName="About GROOT"
+      authorImage="/assets/groot-avatar.webp"
+    >
+      <DiscordEmbedDescription slot="description">
+        Hey, It's <b>Groot</b> A Quality Music Bot With Breathtaking Features
+        For Greater Experience While On Discord. <b>Groot</b> Is Making Music
+        More Enhanced In Discord. Try <b>Groot</b> Now!
+      </DiscordEmbedDescription>
+      <DiscordEmbedFields slot="fields">
+        <DiscordEmbedField fieldTitle="Developer(s)">
+          <a href="https://discord.com/users/992054637337251940">Priyanshu</a>,{" "}
+          <a href="https://discord.com/users/601487810720956416">Ayaan</a>,{" "}
+          <a href="https://discord.com/users/710012058803896320">Ayush</a>
+        </DiscordEmbedField>
+        <DiscordEmbedField fieldTitle="Contributor(s)">
+          <a href="https://discord.com/users/903803427388280852">Chandan</a>,{" "}
+          <a href="https://discord.com/users/489366265786269704">AyoDev</a>,{" "}
+          <a href="https://discord.com/users/968013339953352715">Mafia</a>,{" "}
+          <a href="https://discord.com/users/849522383076589599">Pragyan</a>
+        </DiscordEmbedField>
+        <DiscordEmbedField fieldTitle="Website Developer(s)">
+          <a href="https://discord.com/users/238390268548612097">Gaurish</a>
+        </DiscordEmbedField>
+      </DiscordEmbedFields>
+    </DiscordEmbed>
+    <DiscordAttachments slot="components">
+      <DiscordActionRow>
+        <DiscordButton
+          url="https://grootbot.pro/support"
+        >
+          Support Server
+        </DiscordButton>
+        <DiscordButton
+          url="https://grootbot.pro/invite"
+        >
+          Invite Me
+        </DiscordButton>
+        <DiscordButton
+          url="https://top.gg/bot/853583833747161091/vote"
+        >
+          Vote
+        </DiscordButton>
+        <DiscordButton
+          url="https://patreon.com/join/grootbot"
+        >
+          Premium
+        </DiscordButton>
+      </DiscordActionRow>
+    </DiscordAttachments>
+  </DiscordMessage>
+</DiscordMessages>

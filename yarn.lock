@@ -1850,6 +1850,23 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
+"@skyra/discord-components-core@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@skyra/discord-components-core/-/discord-components-core-3.4.0.tgz#3ee2b70008c129b4cc4451d320fb3c86964e60cf"
+  integrity sha512-n6J30JPHC4mDWUOSDNsZeJimCTepGvVKggpP7oG1teTgGVb8i/JRN9JT6l3pzgLCXk3YMAj5F3BFEgQleXl6PQ==
+  dependencies:
+    "@stencil/core" "^2.15.2"
+    clsx "^1.1.1"
+    hex-to-rgba "^2.0.1"
+
+"@skyra/discord-components-react@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@skyra/discord-components-react/-/discord-components-react-3.4.0.tgz#0550cda5ee713be59e516624942c64a4960779a9"
+  integrity sha512-maC1Wnl6kppAu3S4COfIXJGaoBdRPKEijB8wRpyga2T2575AROaks7ObniSoID52ecuhxrhLNK9H2lYGoP+J4Q==
+  dependencies:
+    "@skyra/discord-components-core" "^3.4.0"
+    tslib "^2.4.0"
+
 "@slorber/static-site-generator-webpack-plugin@^4.0.7":
   version "4.0.7"
   resolved "https://registry.yarnpkg.com/@slorber/static-site-generator-webpack-plugin/-/static-site-generator-webpack-plugin-4.0.7.tgz#fc1678bddefab014e2145cbe25b3ce4e1cfc36f3"
@@ -1858,6 +1875,11 @@
     eval "^0.1.8"
     p-map "^4.0.0"
     webpack-sources "^3.2.2"
+
+"@stencil/core@^2.15.2":
+  version "2.17.1"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.17.1.tgz#c0fd74d2991c2ea9d7e382017726bfd01009a05c"
+  integrity sha512-ErjQsNALgZQ9SYeBHhqwL1UO+Zbptwl3kwrRJC2tGlc3G/T6UvPuaKr+PGsqI+CZGia+0+R5EELQvFu74mYeIg==
 
 "@svgr/babel-plugin-add-jsx-attribute@^6.3.1":
   version "6.3.1"
@@ -4275,6 +4297,11 @@ he@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
+
+hex-to-rgba@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/hex-to-rgba/-/hex-to-rgba-2.0.1.tgz#4176977882a1cb32b83ce5ab1db6828ab84d5a13"
+  integrity sha512-5XqPJBpsEUMsseJUi2w2Hl7cHFFi3+OO10M2pzAvKB1zL6fc+koGMhmBqoDOCB4GemiRM/zvDMRIhVw6EkB8dQ==
 
 history@^4.9.0:
   version "4.10.1"

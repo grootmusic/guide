@@ -1,0 +1,27 @@
+import {
+  DiscordMessages,
+  DiscordMessage,
+  DiscordCommand,
+  DiscordEmbed,
+  DiscordEmbedDescription,
+  DiscordEmbedFields,
+  DiscordEmbedField,
+  DiscordAttachments,
+  DiscordActionRow,
+  DiscordButton,
+} from "@skyra/discord-components-react";
+
+# Afk
+
+## Description
+
+- Sets afk for this server.
+
+## Usage
+
+<DiscordMessages>
+  <DiscordMessage author="GROOT" avatar="/assets/groot-avatar.webp">
+    <DiscordCommand slot="reply" author="User" command="/afk" />
+        Your AFK Has Been Set To - REASON_HERE
+  </DiscordMessage>
+</DiscordMessages>
