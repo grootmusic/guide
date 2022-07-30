@@ -1,0 +1,54 @@
+import {
+  DiscordMessages,
+  DiscordMessage,
+  DiscordCommand,
+  DiscordEmbed,
+  DiscordEmbedDescription,
+  DiscordEmbedFields,
+  DiscordEmbedField,
+  DiscordAttachments,
+  DiscordActionRow,
+  DiscordButton,
+} from "@skyra/discord-components-react";
+
+# Nightcore
+
+## Description
+
+- Enables Or Disabled The Nightcore Filter!
+
+## Usage
+
+#### Enabled
+<DiscordMessages>
+  <DiscordMessage author="GROOT" avatar="/assets/groot-avatar.webp">
+    <DiscordCommand slot="reply" author="User" command="/nightcore" />
+    <DiscordEmbed
+      slot="embeds"
+      color="yellow"
+      authorName="GROOT"
+      authorImage="/assets/groot-avatar.webp"
+    >
+      <DiscordEmbedDescription slot="description">
+        Nightcore Has Been <b>Enabled</b>!
+      </DiscordEmbedDescription>
+    </DiscordEmbed>
+  </DiscordMessage>
+</DiscordMessages>
+
+#### Disabled
+<DiscordMessages>
+  <DiscordMessage author="GROOT" avatar="/assets/groot-avatar.webp">
+    <DiscordCommand slot="reply" author="User" command="/nightcore" />
+    <DiscordEmbed
+      slot="embeds"
+      color="yellow"
+      authorName="GROOT"
+      authorImage="/assets/groot-avatar.webp"
+    >
+      <DiscordEmbedDescription slot="description">
+        Nightcore Has Been <b>Disabled</b>!
+      </DiscordEmbedDescription>
+    </DiscordEmbed>
+  </DiscordMessage>
+</DiscordMessages>

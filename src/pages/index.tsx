@@ -12,6 +12,7 @@ function HomepageHeader() {
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container full-height">
         <br />
+        <img className="hero__img" src="/assets/groot-avatar.webp"></img>
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>   

@@ -1,0 +1,54 @@
+import {
+  DiscordMessages,
+  DiscordMessage,
+  DiscordCommand,
+  DiscordEmbed,
+  DiscordEmbedDescription,
+  DiscordEmbedFields,
+  DiscordEmbedField,
+  DiscordAttachments,
+  DiscordActionRow,
+  DiscordButton,
+} from "@skyra/discord-components-react";
+
+# Slowmo
+
+## Description
+
+- Enables Or Disabled The Slowmo Filter!
+
+## Usage
+
+#### Enabled
+<DiscordMessages>
+  <DiscordMessage author="GROOT" avatar="/assets/groot-avatar.webp">
+    <DiscordCommand slot="reply" author="User" command="/slowmo" />
+    <DiscordEmbed
+      slot="embeds"
+      color="yellow"
+      authorName="GROOT"
+      authorImage="/assets/groot-avatar.webp"
+    >
+      <DiscordEmbedDescription slot="description">
+        Slowmo Has Been <b>Enabled</b>!
+      </DiscordEmbedDescription>
+    </DiscordEmbed>
+  </DiscordMessage>
+</DiscordMessages>
+
+#### Disabled
+<DiscordMessages>
+  <DiscordMessage author="GROOT" avatar="/assets/groot-avatar.webp">
+    <DiscordCommand slot="reply" author="User" command="/slowmo" />
+    <DiscordEmbed
+      slot="embeds"
+      color="yellow"
+      authorName="GROOT"
+      authorImage="/assets/groot-avatar.webp"
+    >
+      <DiscordEmbedDescription slot="description">
+        Slowmo Has Been <b>Disabled</b>!
+      </DiscordEmbedDescription>
+    </DiscordEmbed>
+  </DiscordMessage>
+</DiscordMessages>
