@@ -1,0 +1,38 @@
+import {
+  DiscordMessages,
+  DiscordMessage,
+  DiscordCommand,
+  DiscordEmbed,
+  DiscordEmbedDescription,
+  DiscordEmbedFields,
+  DiscordEmbedField,
+  DiscordAttachments,
+  DiscordActionRow,
+  DiscordButton,
+  DiscordMention,
+} from "@skyra/discord-components-react";
+
+# Shuffle
+
+## Description
+
+- Shuffle the queue
+
+## Usage
+
+<DiscordMessages>
+  <DiscordMessage
+    bot="true"
+    verified="true"
+    roleColor="#FF0000"
+    author="GROOT"
+    avatar="/assets/groot-avatar.webp"
+  >
+    <DiscordCommand slot="reply" author="User" command="/shuffle" />
+    <DiscordEmbed slot="embeds" color="blue">
+      <DiscordEmbedDescription slot="description">
+        Queue Is Now Shuffled.
+      </DiscordEmbedDescription>
+    </DiscordEmbed>
+  </DiscordMessage>
+</DiscordMessages>

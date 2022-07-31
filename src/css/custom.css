@@ -56,6 +56,5 @@
   right: 8px;
 } */
 .hero {
-  height: 310px;
-  /* background-color: #222; */
+  height: fit-content;
 }

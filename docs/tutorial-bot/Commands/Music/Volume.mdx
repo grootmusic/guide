@@ -1,0 +1,38 @@
+import {
+  DiscordMessages,
+  DiscordMessage,
+  DiscordCommand,
+  DiscordEmbed,
+  DiscordEmbedDescription,
+  DiscordEmbedFields,
+  DiscordEmbedField,
+  DiscordAttachments,
+  DiscordActionRow,
+  DiscordButton,
+  DiscordMention,
+} from "@skyra/discord-components-react";
+
+# Volume
+
+## Description
+
+- Configure the volume of the player
+
+## Usage
+
+<DiscordMessages>
+  <DiscordMessage
+    bot="true"
+    verified="true"
+    roleColor="#FF0000"
+    author="GROOT"
+    avatar="/assets/groot-avatar.webp"
+  >
+    <DiscordCommand slot="reply" author="User" command="/volume" />
+    <DiscordEmbed slot="embeds" authorName="GROOT" authorImage="/assets/groot-avatar.webp" color="blue">
+      <DiscordEmbedDescription slot="description">
+        The Volume Has Been Changed To VOLUME_HERE%
+      </DiscordEmbedDescription>
+    </DiscordEmbed>
+  </DiscordMessage>
+</DiscordMessages>

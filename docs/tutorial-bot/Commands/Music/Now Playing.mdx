@@ -1,0 +1,44 @@
+import {
+  DiscordMessages,
+  DiscordMessage,
+  DiscordCommand,
+  DiscordEmbed,
+  DiscordEmbedDescription,
+  DiscordEmbedFields,
+  DiscordEmbedField,
+  DiscordAttachments,
+  DiscordActionRow,
+  DiscordButton,
+  DiscordMention,
+} from "@skyra/discord-components-react";
+
+# Now Playing
+
+## Description
+
+- Get currently playing track.
+
+## Usage
+
+<DiscordMessages>
+  <DiscordMessage
+    bot="true"
+    verified="true"
+    roleColor="#FF0000"
+    author="GROOT"
+    avatar="/assets/groot-avatar.webp"
+  >
+    <DiscordCommand slot="reply" author="User" command="/nowplaying" />
+    <DiscordEmbed slot="embeds" color="blue" embedTitle="Now Playing">
+      <DiscordEmbedDescription slot="description">
+        Marshmello - Stars (Official Music Video) [
+        <DiscordMention>User</DiscordMention>]
+      </DiscordEmbedDescription>
+      <DiscordEmbedFields slot="fields">
+        <DiscordEmbedField fieldTitle="">
+          ▬🔘▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ 19s / 3m 20s
+        </DiscordEmbedField>
+      </DiscordEmbedFields>
+    </DiscordEmbed>
+  </DiscordMessage>
+</DiscordMessages>

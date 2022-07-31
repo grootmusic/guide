@@ -1,0 +1,34 @@
+import {
+  DiscordMessages,
+  DiscordMessage,
+  DiscordCommand,
+  DiscordEmbed,
+  DiscordEmbedDescription,
+  DiscordEmbedFields,
+  DiscordEmbedField,
+  DiscordAttachments,
+  DiscordActionRow,
+  DiscordButton,
+  DiscordMention,
+} from "@skyra/discord-components-react";
+
+# Previous
+
+## Description
+
+- Play the previously played track again.
+
+## Usage
+
+<DiscordMessages>
+  <DiscordMessage
+    bot="true"
+    verified="true"
+    roleColor="#FF0000"
+    author="GROOT"
+    avatar="/assets/groot-avatar.webp"
+  >
+    <DiscordCommand slot="reply" author="User" command="/previous" />
+    Playing Previous Song!
+  </DiscordMessage>
+</DiscordMessages>
